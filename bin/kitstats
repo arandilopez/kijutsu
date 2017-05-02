@@ -2,6 +2,15 @@
 
 'use strict'
 
-var cli = require('../lib/cli')
+const figlet = require('figlet')
+const chalk = require('chalk')
+
+let header = figlet.textSync('Kitstats')
+let coloredHeader = chalk.yellow(header)
+
+console.log(coloredHeader)
+console.log(chalk.blue('by Arandi López'));
+
+const cli = require('../lib/cli')
 
 cli.run(process.argv.splice(2))
