@@ -1,15 +1,23 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --harmony
 
 'use strict'
 
 const figlet = require('figlet')
 const chalk = require('chalk')
 const cli = require('../lib/cli')
+const program = require('commander');
 
-let header = figlet.textSync('Kijustu')
-let coloredHeader = chalk.yellow(header)
+program
+  .version('1.0.0')
+  .arguments('<username>')
+  .action(function (username) {
+    let header = figlet.textSync('Kijutsu')
+    let coloredHeader = chalk.yellow(header)
 
-console.log(coloredHeader)
-console.log(chalk.blue('by Arandi López'));
+    console.log(coloredHeader)
+    console.log(chalk.blue('by Arandi López'));
 
-cli.run(process.argv.splice(2))
+    cli.run(username)
+  })
+
+  program.parse(process.argv)
