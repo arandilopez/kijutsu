@@ -1,9 +1,16 @@
 {
-  "name": "kitstats",
+  "name": "kijutsu",
   "version": "1.0.0",
   "description": "Get Kitsu user stats in command line",
+  "scripts": {
+    "test": "mocha"
+  },
   "bin": {
-    "kitstats": "bin/kitstats"
+    "kijutsu": "bin/kijutsu"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/arandilopez/kijutsu.git"
   },
   "keywords": [
     "anime",
@@ -18,5 +25,9 @@
     "devour-client": "^1.4.1",
     "figlet": "^1.2.0",
     "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
   }
 }

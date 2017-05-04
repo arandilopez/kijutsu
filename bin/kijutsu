@@ -5,7 +5,7 @@
 const figlet = require('figlet')
 const chalk = require('chalk')
 
-let header = figlet.textSync('Kitstats')
+let header = figlet.textSync('Kijustu')
 let coloredHeader = chalk.yellow(header)
 
 console.log(coloredHeader)
