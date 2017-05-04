@@ -4,13 +4,12 @@
 
 const figlet = require('figlet')
 const chalk = require('chalk')
+const cli = require('../lib/cli')
 
 let header = figlet.textSync('Kijustu')
 let coloredHeader = chalk.yellow(header)
 
 console.log(coloredHeader)
 console.log(chalk.blue('by Arandi López'));
-
-const cli = require('../lib/cli')
 
 cli.run(process.argv.splice(2))
