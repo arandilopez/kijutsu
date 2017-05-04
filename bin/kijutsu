@@ -10,6 +10,7 @@ const program = require('commander');
 program
   .version('1.0.0')
   .arguments('<username>')
+  .description('fetch anime stats form ' + chalk.blue('kitsu.io'))
   .action(function (username) {
     let header = figlet.textSync('Kijutsu')
     let coloredHeader = chalk.yellow(header)
