@@ -61,13 +61,23 @@ describe('TimeService', function () {
     })
   })
 
-  describe('parseTimeInAnime', function () {
+  describe('splitTime', function () {
     it('should parse 49_930min to 1months 4days 16hours and 10mins', function () {
-      let res = TimeService.parseDaysToMonths(49930) // mins
+      let res = TimeService.splitTime(49930) // mins
       res.months.should.equal(1)
       res.days.should.equal(4)
       res.hours.should.equal(16)
       res.mins.should.equal(10)
+    })
+  })
+
+  describe('timeReducer', function () {
+    it('should reduce a coleccion of anime to a sum of their times', function () {
+      let times = [10, 20, 30, 40]
+
+      let time = TimeService.timeReducer(times)
+
+      time.should.equal(100)
     })
   })
 
