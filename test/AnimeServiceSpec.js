@@ -14,7 +14,7 @@ describe('AnimeService', function () {
       ]
 
       let times = AnimeService.mapToTimes(animes)
-
+      times.length.should.equal(5)
       times.forEach(function (element) {
         element.should.equal(240)
       })
