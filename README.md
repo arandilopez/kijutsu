@@ -1,8 +1,8 @@
 # WIP: Kijutsu 記述
 
-Amine stats for user provided by [Kitsu](https://kitsu.io)
+Amine stats provided by [Kitsu](https://kitsu.io)
 
-記述 means descriptor (Google translate said, sorry)
+> 記述 means descriptor (Google translate said, sorry)
 
 ## Install
 
